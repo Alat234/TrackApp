@@ -10,7 +10,6 @@
 using namespace std;
 mutex mx;
 
-/
 bool ReadVectorFromFile(const string& filename, vector<int>& vec, int size) {
     ifstream fVector(filename);
     if (!fVector) {
@@ -151,7 +150,7 @@ string Task2(string matrixFile, string vectorFile, int procNum, int rowNum, int 
     }
 
     vector<vector<int>> A;
-    // Використовуємо допоміжну функцію
+    
     if (!ReadMatrixFromFile(matrixFile, A, rowNum, colNum)) {
         functionOutput << "No file containing matrix or file is corrupted";
         return functionOutput.str();
