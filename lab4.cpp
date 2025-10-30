@@ -23,8 +23,8 @@ void calculateBlockPartial(
     int totalMatrixRows,
     int totalMatrixCols
 ) {
-    int rowEnd = rowStart + rowsPerBlock
-    int colEnd = colStart + colsPerBlock
+    int rowEnd = rowStart + rowsPerBlock;
+    int colEnd = colStart + colsPerBlock;
 
     int numRowsInBlock = rowEnd - rowStart;
 
